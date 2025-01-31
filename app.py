@@ -53,5 +53,5 @@ with gr.Blocks(css=css) as demo:
     )
 
 # 🔹 เปิดใช้งาน Web App บน Render
-port = int(os.getenv("PORT", 7860))  # ดึงค่า PORT จาก Render
+port = int(os.getenv("PORT", 7860))  # ใช้ PORT จาก Render
 demo.launch(server_name="0.0.0.0", server_port=port)
